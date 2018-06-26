@@ -63,10 +63,10 @@ defmodule NervesSystemRpi0.MixProject do
 
   defp package do
     [
-      maintainers: ["Timothy Mecklem", "Frank Hunleth"],
+      maintainers: ["Aldebaran Alonso"],
       files: package_files(),
       licenses: ["Apache 2.0"],
-      links: %{"Github" => "https://github.com/nerves-project/#{@app}"}
+      links: %{"Github" => "https://github.com/alde103/custom_rpi0"}
     ]
   end
 
