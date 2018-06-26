@@ -8,7 +8,7 @@ defmodule NervesSystemRpi0.MixProject do
 
   def project do
     [
-      app: @app,
+      app: :custom_rpi0,
       version: @version,
       elixir: "~> 1.4",
       compilers: Mix.compilers() ++ [:nerves_package],
@@ -34,9 +34,9 @@ defmodule NervesSystemRpi0.MixProject do
   defp nerves_package do
     [
       type: :system,
-      artifact_sites: [
-        {:github_releases, "nerves-project/#{@app}"}
-      ],
+      # artifact_sites: [
+      #   {:github_releases, "nerves-project/#{@app}"}
+      # ],
       platform: Nerves.System.BR,
       platform_config: [
         defconfig: "nerves_defconfig"
